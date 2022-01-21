@@ -1,29 +1,16 @@
 ---
-# try also 'default' to start simple
 theme: flayyer
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
-drawings:
-  persist: false
+layout: center
+class: text-center
+title: Typescript
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
+<div class="pt-12">
+  <span class="px-2 py-1 rounded text-6xl" hover="bg-white bg-opacity-10">
+   <logos-typescript-icon   class="inline"/>  <span class="">Typescript </span>
+  </span>
+</div>
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -89,24 +76,28 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ### Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
+
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
+
 ---
 
 # Code
@@ -115,16 +106,16 @@ Use code snippets and get the highlighting directly![^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+  id: number;
+  firstName: string;
+  lastName: string;
+  role: string;
 }
 
 function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = {...user, ...update}  
-  saveUser(id, newUser)
+  const user = getUser(id);
+  const newUser = { ...user, ...update };
+  saveUser(id, newUser);
 }
 ```
 
@@ -176,10 +167,9 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 </div>
 
+---
 
----
-class: px-20
----
+## class: px-20
 
 # Themes
 
@@ -209,20 +199,15 @@ Read more about [How to use a theme](https://sli.dev/themes/use.html) and
 check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
 
 ---
-preload: false
----
+
+## preload: false
 
 # Animations
 
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -295,6 +280,7 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
+
 $$
 \begin{array}{c}
 
@@ -372,21 +358,23 @@ database "MySql" {
 
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
-
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Learn More
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
 
-
 ---
+
 layout: intro
 image: "/bg-example.png"
 floatingImage: "/floating.png"
+
 ---
 
 <div class="h-full flex justify-between flex-col">
@@ -407,11 +395,12 @@ floatingImage: "/floating.png"
   </div>
 </div>
 
-
 ---
+
 layout: text-image
 image: "/image-example-1.png"
 class: "py-24"
+
 ---
 
 <h2 class="text-[#111827] font-extrabold dark:text-gray-400">
@@ -426,11 +415,13 @@ class: "py-24"
 - Visual consistency is important and it is costly to adapt to change if you have thousands of products and images.
 
 ---
+
 layout: text-image
 image: "/image-example-2.png"
 imageFirst: true
 contentCols: "col-span-7"
 imageCols: "col-span-5"
+
 ---
 
 <div class="py-20">
@@ -441,17 +432,19 @@ imageCols: "col-span-5"
   <br />
   <br />
 
-  - Companies neglect how their links look when they are shared by people on social networks.
-  - **The most important factor that determines people's trust and interest in links is the image and the URL.**
-  - There is a sea of information and every day it is more difficult to capture people's attention.
+- Companies neglect how their links look when they are shared by people on social networks.
+- **The most important factor that determines people's trust and interest in links is the image and the URL.**
+- There is a sea of information and every day it is more difficult to capture people's attention.
 </div>
 
 ---
+
 layout: text-image
 image: "/floating.png"
 class: "py-16"
 contentCols: "col-span-6"
 imageCols: "col-span-6"
+
 ---
 
 <h2 class="text-[#111827] font-extrabold dark:text-gray-400">
@@ -470,8 +463,8 @@ We allow creatives to focus on creating and **not repeating.**
 **We increase the number of visits to your site.**
 
 ---
-layout: blank
----
+
+## layout: blank
 
 <h2 class="text-[#111827] text-center font-extrabold dark:text-gray-400">
   <span class="text-primary dark:text-white">Use cases:</span> Responsive image generation for social networks
@@ -480,11 +473,13 @@ layout: blank
 <img src="/blank-example-1.png" alt="Flayyer" class="w-full mt-4 mx-auto max-w-[600px]" />
 
 ---
+
 layout: text-image
 image: '/floating.png'
 class: 'gap-8 py-24'
 contentCols: "col-span-7"
 imageCols: "col-span-5"
+
 ---
 
 <h2 class="text-[#111827] font-extrabold mb-4 dark:text-gray-400">
@@ -506,8 +501,8 @@ const flayyer = new FlayyerIO({
 ```
 
 ---
-layout: cover
----
+
+## layout: cover
 
 <h2 class="text-[#111827] text-center font-extrabold dark:text-gray-400">
   A blank slide to do whatever you want
