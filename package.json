@@ -10,6 +10,7 @@
     "@slidev/cli": "^0.28.1",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
+    "playwright-chromium": "^1.18.0",
     "slidev-theme-flayyer": "^1.0.2"
   },
   "name": "typescript-workshop-slides"
