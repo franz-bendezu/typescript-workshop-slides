@@ -10,19 +10,13 @@ Determinar qué es un error y qué no en función de los tipos de valores en los
 
 TypeScript verifica un programa en busca de errores antes de la ejecución, y lo hace en función de los tipos de valores, es un verificador de tipo estático. Por ejemplo, el último ejemplo anterior tiene un error debido al tipo de obj. Aquí está el error encontrado por TypeScript: 
 
-
-```ts  {monaco}
+```tsx
 // @errors: 2551
 const obj = { width: 10, height: 15 };
 const area = obj.width * obj.heigth;
 ```
 
-```ts {monaco}
-import { ref } from 'vue'
-import { useMouse } from '@vueuse/core'
-
-const counter = ref(0)
-```
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEAEFMCdoe2gZwFygEwFYMEYBQBjOAO0QBdQ4AjAK1AF5QBvUAdwEsATUgC1WwAYANKG6Q2Ac26k+GUAF8A3AWJlQAQ2iQ19CjQB07Lt1AAqXdT2iJPBUA)
 
 
 <style>
