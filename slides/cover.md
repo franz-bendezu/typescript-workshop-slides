@@ -1,3 +1,6 @@
+---
+layout: cover
+---
 <div class="pt-12">
   <span class="px-2 py-1 rounded text-6xl" hover="bg-white bg-opacity-10">
    <logos-typescript-icon   class="inline"/>  <span class="">Typescript </span>
@@ -6,7 +9,7 @@
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+    Presione Espacio para la página siguiente <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
