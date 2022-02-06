@@ -1,5 +1,6 @@
 ---
-layout: cover
+layout: center
+class: text-center
 ---
 <div class="pt-12">
   <span class="px-2 py-1 rounded text-6xl" hover="bg-white bg-opacity-10">

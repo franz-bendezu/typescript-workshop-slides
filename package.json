@@ -5,11 +5,14 @@
     "dev": "slidev --open",
     "export": "slidev export"
   },
+  "type": "module",
   "dependencies": {
+    "@antfu/utils": "^0.5.0",
     "@iconify-json/logos": "^1.0.4",
     "@slidev/cli": "^0.28.1",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
+    "markdown-it-shiki-twoslash": "^2.0.21",
     "playwright-chromium": "^1.18.0",
     "slidev-theme-flayyer": "^1.0.2"
   },

@@ -1,8 +1,6 @@
 ---
 theme: flayyer
 highlighter: shiki
-layout: center
-class: text-center
 title: Typescript
 src: ./slides/cover.md
 ---

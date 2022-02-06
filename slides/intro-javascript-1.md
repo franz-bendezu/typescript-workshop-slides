@@ -2,7 +2,7 @@
 - JavaScript (ECMAScript) empezó como un simple lenguaje de secuencias de comandos para navegadores.
 - Es un lenguaje que fue diseñado para usos rápidos
 - Creció hasta convertirse en una herramienta completa para escribir aplicaciones con millones de líneas.
-    ```
+
       
 <!--
 You can have `style` tag in markdown to override the style for the current page.
