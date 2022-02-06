@@ -302,7 +302,7 @@ pre .logger.log-log svg {
 
   /* En línea #18 | http://localhost:3030/4 */
   
-  .slidev-layout li {
+  .slidev-layout li pre {
     line-height: 0.9em; 
   }
   
