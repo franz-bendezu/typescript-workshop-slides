@@ -8,9 +8,9 @@ export default defineConfig({
       /* markdown-it options */
       async markdownItSetup(md) {
         const shiki = await markdownItShikiTwoslashSetup({
-          theme: "nord",
-        })
-        md.use(shiki)
+          theme: "min-dark",
+        });
+        md.use(shiki);
       },
     },
     /* options for other plugins */
