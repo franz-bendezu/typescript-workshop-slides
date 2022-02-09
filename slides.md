@@ -124,6 +124,23 @@ src: ./slides/basics/tsc-4.md
 
 
 ---
+src: ./slides/basics/emitting-with-errors.md
+---
+
+---
+src: ./slides/basics/explicit-types-1.md
+---
+
+---
+src: ./slides/basics/explicit-types-2.md
+---
+
+---
+src: ./slides/basics/explicit-types-3.md
+---
+
+
+---
 src: ./slides/classes-intro.md
 ---
 

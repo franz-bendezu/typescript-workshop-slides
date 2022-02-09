@@ -6,7 +6,7 @@ Reescribamos `hola.ts`:
 ```ts twoslash
 // @noErrors
 // Esta es una función de bienvenida de propósito general de grado industrial:
-función saludar(persona, fecha) {
+function saludar(persona, fecha) {
   console.log(`Hola ${persona}, hoy es ${fecha}!`);
 }
 saludar("Brendan");
