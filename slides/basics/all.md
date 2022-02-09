@@ -51,7 +51,7 @@ Por ejemplo, considere esta función:
 
 ```js
 función fn(x) {
-  volver x.flip();
+  return x.flip();
 }
 ```
 
