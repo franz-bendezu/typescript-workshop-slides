@@ -58,9 +58,9 @@ o errores lógicos básicos.
 ```ts twoslash
 // @errors: 2367
 const valor  = Math.random() < 0.5 ? "a" : "b";
-si (valor !== "a") {
+if (valor !== "a") {
   // ...
-} más si (valor === "b") {
+} else if (valor === "b") {
   // Ups, inalcanzable
 }
 ```
