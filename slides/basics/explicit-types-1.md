@@ -6,7 +6,7 @@ También usaremos el método `toDateString()` en `date`.
 
 ```ts twoslash
 function saludar(persona: string, fecha: Date) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
 ```
 
