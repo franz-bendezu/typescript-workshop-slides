@@ -13,4 +13,4 @@ saludar("Maddison", Date());
 TypeScript informó un error en nuestro segundo argumento, pero ¿por qué?
 
 Quizás sorprendentemente, llamar a `Date()` en JavaScript devuelve una `cadena`.
-Por otro lado, construir una `Fecha` con `nueva Fecha()` en realidad nos da lo que esperábamos.
+Por otro lado, construir una `Date` con `new Date()` en realidad nos da lo que esperábamos.

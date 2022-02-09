@@ -11,6 +11,6 @@ function saludar(persona: string, fecha: Date) {
 ```
 
 Lo que hicimos fue agregar _anotaciones de tipo_ en `persona` y `fecha` para describir con qué tipos de valores se puede llamar a `saludar`.
-Puede leer esa firma como "`saludo` toma una `persona` de tipo `cadena` y una `fecha` de tipo `Fecha`".
+Puede leer esa firma como "`saludo` toma una `persona` de tipo `string` y una `fecha` de tipo `Date`".
 
 Con esto, TypeScript puede informarnos sobre otros casos en los que `saludar` podría haberse llamado incorrectamente.
