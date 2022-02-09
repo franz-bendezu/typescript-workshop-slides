@@ -47,9 +47,9 @@ funciones no llamadas,
 ```ts twoslash
 // @noUnusedLocals
 // @errors: 2365
-función flipCoin() {
+function flipCoin() {
   // Pretende ser Math.random()
-  devuelve Math.random <0.5;
+  return Math.random <0.5;
 }
 ```
 

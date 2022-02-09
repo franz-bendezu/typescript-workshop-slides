@@ -4,8 +4,8 @@ Pero para otras cosas como funciones, no existe un mecanismo de tiempo de ejecuc
 Por ejemplo, considere esta función:
 
 ```js
-función fn(x) {
-  volver x.flip();
+function fn(x) {
+  return x.flip();
 }
 ```
 Podemos _observar_ al leer el código que esta función solo funcionará si se le da un objeto con una propiedad 'flip' invocable, pero JavaScript no muestra esta información de una manera que podamos verificar mientras se ejecuta el código.
