@@ -1,3 +1,5 @@
+## Tipos explícitos
+
 De todos modos, podemos corregir rápidamente el error:
 
 ```ts twoslash {4}

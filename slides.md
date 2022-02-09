@@ -139,6 +139,34 @@ src: ./slides/basics/explicit-types-2.md
 src: ./slides/basics/explicit-types-3.md
 ---
 
+---
+src: ./slides/basics/erased-types-1.md
+---
+
+---
+src: ./slides/basics/erased-types-2.md
+---
+
+
+---
+src: ./slides/basics/downleveling-1.md
+---
+
+---
+src: ./slides/basics/downleveling-2.md
+---
+
+---
+src: ./slides/basics/strictness-1.md
+---
+
+---
+src: ./slides/basics/strictness-2.md
+---
+
+---
+src: ./slides/basics/strictness-3.md
+---
 
 ---
 src: ./slides/classes-intro.md

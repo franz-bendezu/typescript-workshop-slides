@@ -281,8 +281,8 @@ Editemos el código para decirle a TypeScript que `persona` es una `cadena` y qu
 También usaremos el método `toDateString()` en `date`.
 
 ```ts twoslash
-función saludar(persona: cadena, fecha: Fecha) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+función saludar(persona: string, fecha: Date) {
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
 ```
 
@@ -294,25 +294,25 @@ Por ejemplo...
 
 ```ts twoslash
 // @errors: 2345
-función saludar(persona: cadena, fecha: Fecha) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+función saludar(persona: string, fecha: Date) {
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
-saludar("Maddison", Fecha());
+saludar("Maddison", Date());
 ```
 
 ¿Eh?
 TypeScript informó un error en nuestro segundo argumento, pero ¿por qué?
 
 Quizás sorprendentemente, llamar a `Date()` en JavaScript devuelve una `cadena`.
-Por otro lado, construir una `Fecha` con `nueva Fecha()` en realidad nos da lo que esperábamos.
+Por otro lado, construir una `Fecha` con `new Date()` en realidad nos da lo que esperábamos.
 
 De todos modos, podemos corregir rápidamente el error:
 
 ```ts twoslash {4}
-función saludar(persona: cadena, fecha: Fecha) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+función saludar(persona: string, fecha: Date) {
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
-saludar("Maddison", nueva Fecha());
+saludar("Maddison", new Date());
 ```
 
 Tenga en cuenta que no siempre tenemos que escribir anotaciones de tipo explícitas.
@@ -334,10 +334,10 @@ Echemos un vistazo a lo que sucede cuando compilamos la función anterior `salud
 ```ts twoslash
 // @showEmit
 // @objetivo: es5
-función saludar(persona: cadena, fecha: Fecha) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+función saludar(persona: string, fecha: Date) {
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
-saludar("Maddison", nueva Fecha());
+saludar("Maddison", new Date());
 ```
 
 Note dos cosas aquí:
@@ -351,12 +351,14 @@ Es por eso que TypeScript necesita un compilador en primer lugar: necesita algun
 La mayoría del código específico de TypeScript se borra y, del mismo modo, aquí nuestras anotaciones de tipo se borraron por completo.
 
 > **Recuerde**: Las anotaciones de tipo nunca cambian el comportamiento del tiempo de ejecución de su programa.
+
+
 ## Bajar de nivel
 
 Otra diferencia con lo anterior fue que nuestra cadena de plantilla se reescribió a partir de
 
 ```js
-`Hola ${persona}, hoy es ${date.toDateString()}!`;
+`Hola ${persona}, hoy es ${fecha.toDateString()}!`;
 ```
 
 a
@@ -378,9 +380,9 @@ Entonces ejecutar `tsc --target es2015 hello.ts` nos da el siguiente resultado:
 
 ```js
 función saludar(persona, fecha) {
-  console.log(`Hola ${persona}, hoy es ${date.toDateString()}!`);
+  console.log(`Hola ${persona}, hoy es ${fecha.toDateString()}!`);
 }
-saludar("Maddison", nueva Fecha());
+saludar("Maddison", new Date());
 ```
 
 > Si bien el objetivo predeterminado es ES3, la gran mayoría de los navegadores actuales son compatibles con ES2015.
