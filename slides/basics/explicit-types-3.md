@@ -13,8 +13,7 @@ Tenga en cuenta que no siempre tenemos que escribir anotaciones de tipo explíci
 En muchos casos, TypeScript puede incluso _inferir_ (o "descifrar") los tipos por nosotros, incluso si los omitimos.
 
 ```ts twoslash
-let msg = "¡Hola!";
-// ^?
+let msg = "¡Hola!"; 
 ```
 
 Aunque no le dijimos a TypeScript que `msg` tenía el tipo `cadena`, fue capaz de averiguarlo.
