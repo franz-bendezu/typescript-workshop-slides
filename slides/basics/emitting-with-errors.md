@@ -7,7 +7,7 @@ Eso puede ser un poco sorprendente dado el hecho de que `tsc` informó un error 
 
 El código de verificación de tipo limita las clases de programas que puede ejecutar, por lo que hay una compensación sobre qué tipo de cosas encuentra aceptable un verificador de tipo.
 La mayoría de las veces está bien, pero hay escenarios en los que esos controles se interponen.
-Por ejemplo, si se migra código JavaScript a TypeScript e introduciendo errores de verificación de tipos.
+Por ejemplo, si se migra código JavaScript a TypeScript agregando errores de verificación de tipos.
 Eventualmente, podrá limpiar las cosas para el verificador de tipos, ¡pero ese código JavaScript original ya estaba funcionando!
 ¿Por qué debería convertirlo a TypeScript en un impedimento para ejecutarlo?
 
