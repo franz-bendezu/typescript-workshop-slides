@@ -10,7 +10,6 @@ export default defineConfig({
         const shiki = await markdownItShikiTwoslashSetup({
           theme: "min-dark",
         });
-        console.log(md, shiki);
         md.use(shiki);
       },
     },
