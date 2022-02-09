@@ -1,3 +1,4 @@
+
 ## `tsc`, el compilador de TypeScript
 
 Hemos estado hablando sobre la verificación de tipos, pero aún no hemos usado nuestro type-_checker_.
@@ -13,11 +14,13 @@ npm install -g typescript
 > Puedes usar `npx` o herramientas similares si prefieres ejecutar `tsc` desde un paquete `node_modules` local.
 
 
-Ahora pasemos a una carpeta vacía e intentemos escribir nuestro primer programa TypeScript: `hello.ts`:
+Ahora pasemos a una carpeta vacía e intentemos escribir nuestro primer programa TypeScript: 
 
+`hello.ts`:
 ```ts twoslash
 // Saluda al mundo.
 console.log("¡Hola mundo!");
 ```
 
-Tenga en cuenta que aquí no hay lujos; este programa "hola mundo" se ve idéntico a lo que escribirías para un programa "hola mundo" en JavaScript.
+Tenga en cuenta que aquí no hay nada nuevo; este programa "hola mundo" se ve idéntico a lo que escribirías para un programa "hola mundo" en JavaScript.
+

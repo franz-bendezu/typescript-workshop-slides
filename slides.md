@@ -168,12 +168,3 @@ src: ./slides/basics/strictness-2.md
 ---
 src: ./slides/basics/strictness-3.md
 ---
-
----
-src: ./slides/classes-intro.md
----
-
-
----
-src: ./slides/classes-intro.md
----

@@ -1,3 +1,4 @@
+
 ## Tipos explícitos
 Por ejemplo...
 
@@ -12,5 +13,6 @@ saludar("Maddison", Date());
 ¿Eh?
 TypeScript informó un error en nuestro segundo argumento, pero ¿por qué?
 
-Quizás sorprendentemente, llamar a `Date()` en JavaScript devuelve una `cadena`.
+Quizás sorprendentemente, llamar a `Date()` en JavaScript devuelve una `string`.
 Por otro lado, construir una `Date` con `new Date()` en realidad nos da lo que esperábamos.
+

@@ -1,6 +1,9 @@
+
 ## `tsc`, el compilador de TypeScript
 
-¿Qué pasa si _introdujimos_ un error de verificación de tipos?
+¿Qué pasa si _introducimos_ un error de verificación de tipos?
+
+
 Reescribamos `hola.ts`:
 
 ```ts twoslash
@@ -21,4 +24,6 @@ Expected 2 arguments, but got 1.
 
 TypeScript nos dice que olvidamos pasar un argumento a la función `saludar`, y con razón.
 Hasta ahora, solo hemos escrito JavaScript estándar y, sin embargo, la verificación de tipos aún pudo encontrar problemas con nuestro código.
+
 Gracias TypeScript!
+
