@@ -6,40 +6,40 @@ src: ./slides/cover.md
 ---
 
 ---
-src: ./slides/intro-context.md
+src: ./slides/intro/context.md
 ---
 
 ---
-src: ./slides/intro-javascript-1.md
+src: ./slides/intro/javascript-1.md
 ---
 
 ---
-src: ./slides/intro-javascript-2.md
+src: ./slides/intro/javascript-2.md
 ---
 
 ---
-src: ./slides/intro-typescript-1.md
+src: ./slides/intro/typescript-1.md
 ---
 
 ---
-src: ./slides/intro-typescript-2.md
+src: ./slides/intro/typescript-2.md
 ---
 
 
 ---
-src: ./slides/intro-typescript-3.md
----
-
-
-
----
-src: ./slides/intro-typescript-4.md
+src: ./slides/intro/typescript-3.md
 ---
 
 
 
 ---
-src: ./slides/intro-typescript-5.md
+src: ./slides/intro/typescript-4.md
+---
+
+
+
+---
+src: ./slides/intro/typescript-5.md
 ---
 
 ---
