@@ -9,7 +9,10 @@ npm install -g typescript
 ```
 
 > Esto instala el Compilador de TypeScript `tsc` globalmente.
+
 > Puedes usar `npx` o herramientas similares si prefieres ejecutar `tsc` desde un paquete `node_modules` local.
+
+
 Ahora pasemos a una carpeta vacía e intentemos escribir nuestro primer programa TypeScript: `hello.ts`:
 
 ```ts twoslash

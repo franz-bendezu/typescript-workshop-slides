@@ -1,4 +1,4 @@
-## Tipos borrados
+## Borrado de tipos
 
 Echemos un vistazo a lo que sucede cuando compilamos la función anterior `saludar` con `tsc` para generar JavaScript:
 
