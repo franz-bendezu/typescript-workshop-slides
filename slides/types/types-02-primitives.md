@@ -1,13 +1,16 @@
-## The primitives: `string`, `number`, and `boolean`
+## Los Primitivos: `string`, `number`, and `boolean`
 
-JavaScript has three very commonly used primitives: `string`, `number`, and `boolean`. Each has a corresponding type in TypeScript. As you might expect, these are the same names you’d see if you used the JavaScript typeof operator on a value of those types:
+JavaScript tiene tres [ primitivos ] muy comúnmente utilizadas (https://developer.mozilla.org/en-US/docs/Glossary/Primitive): `string` , `number` y `boolean` .
+Cada uno tiene un tipo correspondiente en TypeScript.
+Como era de esperar, estos son los mismos nombres que vería si usara el operador `typeof` de JavaScript en un valor de esos tipos:
 
-- `string` represents string values like `"Hello, world"`
-- `number` is for numbers like `42`. JavaScript does not have a special runtime value for integers, so there's no equivalent to `int` or `float` - everything is simply `number`
-- `boolean` is for the two values `true` and `false`
+-  `string` representa valores de cadena como `"Hola, mundo"`
+-  `number` es para números como `42` . JavaScript no tiene un valor de tiempo de ejecución especial para números enteros, por lo que no hay un equivalente a `int` o `float` - todo es simplemente `number`
+-  `boolean` es para los dos valores `true` y `false`
+
 
 ```ts twoslash
-const greeting: string = "Hello, world";
+const greeting: string = "Hola, mundo";
 const lifeAnswer: number = 42;
 const doesSheLikesMe: boolean = false;
 ```

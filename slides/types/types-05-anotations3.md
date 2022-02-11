@@ -1,10 +1,14 @@
-## Anonymous Functions
-Anonymous functions are a little bit different from function declarations. When a function appears in a place where TypeScript can determine how it’s going to be called, the parameters of that function are automatically given types.
 
-Here’s an example:
+## Funciones anónimas
+
+Las funciones anónimas son un poco diferentes de las declaraciones de funciones.
+Cuando aparece una función en un lugar donde TypeScript puede determinar cómo se va a llamar, los parámetros de esa función reciben automáticamente tipos.
+
+Aquí hay un ejemplo:
+
 ```ts twoslash
 // @errors: 2551
-// No type annotations here, but TypeScript can spot the bug
+// No hay anotaciones de tipo aquí, pero TypeScript puede detectar el error
 const names = ["Alice", "Bob", "Eve"];
  
 // Contextual typing for function
@@ -12,12 +16,12 @@ names.forEach(function (s) {
   console.log(s.toUppercase());
 //Property 'toUppercase' does not exist on type 'string'. Did you mean 'toUpperCase'?
 });
- 
+
 // Contextual typing also applies to arrow functions
 names.forEach((s) => {
   console.log(s.toUppercase());
 //Property 'toUppercase' does not exist on type 'string'. Did you mean 'toUpperCase'?
 });
 ```
-Even though the parameter s didn’t have a type annotation, TypeScript used the types of the forEach function, along with the inferred type of the array, to determine the type s will have.
+Aunque el parámetro `s` no tenía una anotación de tipo, TypeScript usó los tipos de la función `forEach`, junto con el tipo inferido de la matriz, para determinar el tipo que tendrá `s`.
 

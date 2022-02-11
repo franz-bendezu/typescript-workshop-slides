@@ -1,5 +1,9 @@
-## Optional Properties
-Object types can also specify that some or all of their properties are optional. To do this, add a ? after the property name:
+
+## Propiedades opcionales
+
+Los tipos de objetos también pueden especificar que algunas o todas sus propiedades sean _opcionales_.
+Para hacer esto, agregue un `?` después del nombre de la propiedad:
+
 ```ts
 function printName(obj: { first: string; last?: string }) {
   // ...
@@ -8,7 +12,8 @@ function printName(obj: { first: string; last?: string }) {
 printName({ first: "Bob" });
 printName({ first: "Alice", last: "Alisson" });
 ```
-In JavaScript, if you access a property that doesn’t exist, you’ll get the value undefined rather than a runtime error. Because of this, when you read from an optional property, you’ll have to check for undefined before using it.
+En JavaScript, si accede a una propiedad que no existe, obtendrá el valor "undefined" en lugar de un error de tiempo de ejecución.
+Debido a esto, cuando _lees_ de una propiedad opcional, tendrás que buscar `undefined` antes de usarla.
 ```ts
 function printName(obj: { first: string; last?: string }) {
   // Error - might crash if 'obj.last' wasn't provided!
@@ -23,3 +28,4 @@ Object is possibly 'undefined'.
   console.log(obj.last?.toUpperCase());
 }
 ```
+

@@ -1,9 +1,19 @@
-## Non-null Assertion Operator (!)
-TypeScript also has a special syntax for removing null and undefined from a type without doing any explicit checking. Writing ! after any expression is effectively a type assertion that the value isn’t null or undefined:
-```ts
-function liveDangerously(x?: number | null) {
-  // No error
-  console.log(x!.toFixed());
+
+## `strictNullChecks` on
+
+Con [`strictNullChecks`](/tsconfig#strictNullChecks) _on_, cuando un valor es `null` o `undefined`, deberá probar esos valores antes de usar métodos o propiedades en ese valor.
+
+Al igual que verificar `undefined` antes de usar una propiedad opcional, podemos usar _narrowing_ para verificar valores que podrían ser `null`:
+
+
+```ts twoslash
+// @errors: 2345
+function doSomething(x: string | null) {
+  if (x === null) {
+    // do nothing
+  } else {
+    console.log("Hello, " + x.toUpperCase());
+  }
 }
 ```
-Just like other type assertions, this doesn’t change the runtime behavior of your code, so it’s important to only use ! when you know that the value can’t be null or undefined.
+

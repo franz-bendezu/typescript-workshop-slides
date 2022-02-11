@@ -1,6 +1,20 @@
-It’s not much use to have a variable that can only have one value!
 
-But by combining literals into unions, you can express a much more useful concept - for example, functions that only accept a certain set of known values:
+## Tipos de literales
+
+Por sí mismos, los tipos literales no son muy valiosos:
+```ts twoslash
+// @errors: 2322
+let x: "hello" = "hello";
+// OK
+x = "hello";
+// ...
+x = "howdy";
+```
+
+¡No sirve de mucho tener una variable que solo puede tener un valor!
+
+Pero al _combinar_ literales en uniones, puede expresar un concepto mucho más útil, por ejemplo, funciones que solo aceptan un cierto conjunto de valores conocidos:
+
 ```ts twoslash
 // @errors: 2345
 function printText(s: string, alignment: "left" | "right" | "center") {
@@ -9,9 +23,4 @@ function printText(s: string, alignment: "left" | "right" | "center") {
 printText("Hello, world", "left");
 printText("G'day, mate", "centre");
 ```
-Numeric literal types work the same way:
-```ts
-function compare(a: string, b: string): -1 | 0 | 1 {
-  return a === b ? 0 : a > b ? 1 : -1;
-}
-```
+

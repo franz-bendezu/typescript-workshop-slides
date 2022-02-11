@@ -1,7 +1,12 @@
-## Object Types
-Apart from primitives, the most common sort of type you’ll encounter is an object type. This refers to any JavaScript value with properties, which is almost all of them! To define an object type, we simply list its properties and their types.
 
-For example, here’s a function that takes a point-like object:
+## Tipos de objetos
+
+Aparte de los primitivos, el tipo de tipo más común que encontrará es un _tipo de objeto_.
+Esto se refiere a cualquier valor de JavaScript con propiedades, ¡que son casi todas!
+Para definir un tipo de objeto, simplemente enumeramos sus propiedades y sus tipos.
+
+Por ejemplo, aquí hay una función que toma un objeto similar a un punto:
+
 ```ts
 // The parameter's type annotation is an object type
 function printCoord(pt: { x: number; y: number }) {
@@ -10,6 +15,9 @@ function printCoord(pt: { x: number; y: number }) {
 }
 printCoord({ x: 3, y: 7 });
 ```
-Here, we annotated the parameter with a type with two properties - x and y - which are both of type number. You can use , or ; to separate the properties, and the last separator is optional either way.
+Aquí, anotamos el parámetro con un tipo con dos propiedades, `x` e `y`, que son ambas del tipo `number`.
+Puede usar `,` o `;` para separar las propiedades, y el último separador es opcional de cualquier manera.
 
-The type part of each property is also optional. If you don’t specify a type, it will be assumed to be any.
+La parte tipo de cada propiedad también es opcional.
+Si no especifica un tipo, se asumirá que es `any`.
+

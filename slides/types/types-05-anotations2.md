@@ -1,12 +1,18 @@
-## Return Type Annotations
 
-When a parameter has a type annotation, arguments to that function will be checked:
+## Anotaciones para el retorno de tipos
 
-Even if you don’t have type annotations on your parameters, TypeScript will still check that you passed the right number of arguments.
+También puede agregar anotaciones de tipo de retorno.
+
+Las anotaciones de tipo de devolución aparecen después de la lista de parámetros:
+
 
 ```ts
 function getFavoriteNumber(): number {
   return 26;
 }
 ```
-Much like variable type annotations, you usually don’t need a return type annotation because TypeScript will infer the function’s return type based on its return statements. The type annotation in the above example doesn’t change anything. Some codebases will explicitly specify a return type for documentation purposes, to prevent accidental changes, or just for personal preference.
+
+Al igual que las anotaciones de tipo de variable, normalmente no necesita una anotación de tipo de retorno porque TypeScript inferirá el tipo de retorno de la función en función de sus declaraciones `return`.
+La anotación de tipo en el ejemplo anterior no cambia nada.
+Algunas bases de código especificarán explícitamente un tipo de devolución con fines de documentación, para evitar cambios accidentales o simplemente por preferencia personal.
+

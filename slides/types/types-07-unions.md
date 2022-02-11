@@ -1,10 +1,17 @@
-## Union Types
-TypeScript’s type system allows you to build new types out of existing ones using a large variety of operators. Now that we know how to write a few types, it’s time to start combining them in interesting ways.
 
-Defining a Union Type
-The first way to combine types you might see is a union type. A union type is a type formed from two or more other types, representing values that may be any one of those types. We refer to each of these types as the union’s members.
+## Tipos  unión
 
-Let’s write a function that can operate on strings or numbers:
+El sistema de tipos de TypeScript le permite crear nuevos tipos a partir de los existentes utilizando una gran variedad de operadores.
+Ahora que sabemos cómo escribir algunos tipos, es hora de comenzar a _combinarlos_ de maneras interesantes.
+
+### Definición de Union Type
+
+La primera forma de combinar tipos que puede ver es un  _union_ type.
+Un tipo de unión es un tipo formado por dos o más tipos, que representan valores que pueden ser _cualquiera_ de esos tipos.
+Nos referimos a cada uno de estos tipos como _miembros_ del Union Type .
+
+Escribamos una función que pueda operar en cadenas o números:
+
 ```ts twoslash
 // @errors: 2345
 function printId(id: number | string) {
@@ -17,3 +24,4 @@ printId("202");
 // Error
 printId({ myID: 22342 });
 ```
+

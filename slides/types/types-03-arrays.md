@@ -1,7 +1,10 @@
-## Arrays
+## Matrices
 
-To specify the type of an array like `[1, 2, 3]`, you can use the syntax `number[]`; this syntax works for any type (e.g. `string[]` is an array of strings, and so on).
-You may also see this written as `Array<number>`, which means the same thing.
+Para especificar el tipo de una matriz como `[1, 2, 3]`, puede usar la sintaxis `number[]`; esta sintaxis funciona para cualquier tipo (p. ej., `string[]` es una matriz de cadenas, etc.).
+También puede ver esto escrito como `Array<number>`, que significa lo mismo.
+
+Aprenderemos más sobre la sintaxis `T<U>` cuando cubramos _generics_.
+
 
 ```ts twoslash
 const arr: number[] = [1, 2, 3, 4, 3.14]
@@ -10,3 +13,4 @@ const names: string[] = [
     "Pedro"
 ]
 ```
+> Tenga en cuenta que `[number]` es una cosa diferente.

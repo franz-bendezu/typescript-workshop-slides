@@ -186,7 +186,18 @@ src: ./slides/types/types-04-any.md
 ---
 
 ---
+src: ./slides/types/types-04-no-implicit-any.md
+---
+
+---
 src: ./slides/types/types-05-anotations.md
+---
+
+---
+src: ./slides/types/types-05-functions-1.md
+---
+---
+src: ./slides/types/types-05-functions-2.md
 ---
 
 ---
@@ -214,12 +225,29 @@ src: ./slides/types/types-07-unions2.md
 ---
 
 ---
-src: ./slides/types/types-08-aliases.md
+src: ./slides/types/types-07-unions3.md
 ---
 
 ---
-src: ./slides/types/types-09-assertions.md
+src: ./slides/types/types-07-unions4.md
 ---
+
+---
+src: ./slides/types/types-08-aliases-1.md
+---
+
+---
+src: ./slides/types/types-08-aliases-2.md
+---
+
+---
+src: ./slides/types/types-09-assertions-1.md
+---
+
+---
+src: ./slides/types/types-09-assertions-2.md
+---
+
 
 ---
 src: ./slides/types/types-10-literals.md
@@ -230,9 +258,37 @@ src: ./slides/types/types-10-literals2.md
 ---
 
 ---
+src: ./slides/types/types-10-literals3.md
+---
+
+---
+src: ./slides/types/types-11-literal-inference-1.md
+---
+
+---
+src: ./slides/types/types-11-literal-inference-2.md
+---
+
+---
+src: ./slides/types/types-11-literal-inference-3.md
+---
+
+---
 src: ./slides/types/types-11-optionals.md
 ---
 
 ---
 src: ./slides/types/types-11-optionals2.md
+---
+
+---
+src: ./slides/types/types-11-optionals3.md
+---
+
+---
+src: ./slides/types/types-12-less-primitives-1.md
+---
+
+---
+src: ./slides/types/types-12-less-primitives-2.md
 ---

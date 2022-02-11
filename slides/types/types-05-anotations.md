@@ -1,23 +1,27 @@
+
 ## Type Annotations on Variables
 
-When you declare a variable using const, var, or let, you can optionally add a type annotation to explicitly specify the type of the variable:
-```ts
+Cuando declaras una variable usando `const`, `var` o `let`, puedes agregar opcionalmente una anotación de tipo para especificar explícitamente el tipo de la variable:
+
+```ts twoslash
 let myName: string = "Alice";
+//        ^^^^^^^^ Type annotation
+```
+
+> TypeScript no usa declaraciones de estilo "tipos a la izquierda" como `int x = 0;`
+
+> Las anotaciones de tipo siempre irán _después_ de lo que se está escribiendo.
+
+
+En la mayoría de los casos, sin embargo, esto no es necesario.
+Siempre que sea posible, TypeScript intenta _inferir_ automáticamente los tipos en su código.
+Por ejemplo, el tipo de una variable se infiere en función del tipo de su inicializador:
+
+```ts twoslash
 // No type annotation needed -- 'myName' inferred as type 'string'
 let myName = "Alice";
 ```
 
-## Functions
-Functions are the primary means of passing data around in JavaScript. TypeScript allows you to specify the types of both the input and output values of functions.
 
-Parameter Type Annotations
-When you declare a function, you can add type annotations after each parameter to declare what types of parameters the function accepts. Parameter type annotations go after the parameter name:
-```ts twoslash
-// @errors: 2345
-// Parameter type annotation
-function greet(name: string) {
-  console.log("Hello, " + name.toUpperCase() + "!!");
-}
-// Would be a runtime error if executed!
-greet(42);
-```
+En su mayor parte, no necesita aprender explícitamente las reglas de inferencia.
+Si está comenzando, intente usar menos anotaciones de tipo de las que cree; se sorprenderá de la cantidad de anotaciones que necesita para que TypeScript comprenda completamente lo que está sucediendo.

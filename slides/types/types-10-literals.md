@@ -1,7 +1,10 @@
-## Literal Types
-In addition to the general types string and number, we can refer to specific strings and numbers in type positions.
 
-One way to think about this is to consider how JavaScript comes with different ways to declare a variable. Both var and let allow for changing what is held inside the variable, and const does not. This is reflected in how TypeScript creates types for literals.
+## Tipos de literales
+
+Además de los tipos generales `string` y `number`, podemos referirnos a cadenas y números _específicos_ en posiciones de tipo.
+
+Una forma de pensar en esto es considerar cómo JavaScript viene con diferentes formas de declarar una variable. Tanto `var` como `let` permiten cambiar lo que se contiene dentro de la variable, y `const` no. Esto se refleja en cómo TypeScript crea tipos para literales.
+
 ```ts
 let changingString = "Hello World";
 changingString = "Olá Mundo";
@@ -18,5 +21,4 @@ constantString;
       
 const constantString: "Hello World"
 ```
-By themselves, literal types aren’t very valuable:
 
