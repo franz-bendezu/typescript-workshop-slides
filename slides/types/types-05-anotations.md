@@ -1,9 +1,13 @@
+## Type Annotations on Variables
+
 When you declare a variable using const, var, or let, you can optionally add a type annotation to explicitly specify the type of the variable:
 ```ts
 let myName: string = "Alice";
 // No type annotation needed -- 'myName' inferred as type 'string'
 let myName = "Alice";
 ```
+
+## Functions
 Functions are the primary means of passing data around in JavaScript. TypeScript allows you to specify the types of both the input and output values of functions.
 
 Parameter Type Annotations

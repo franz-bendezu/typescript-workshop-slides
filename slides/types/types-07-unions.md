@@ -1,3 +1,4 @@
+## Union Types
 TypeScript’s type system allows you to build new types out of existing ones using a large variety of operators. Now that we know how to write a few types, it’s time to start combining them in interesting ways.
 
 Defining a Union Type
