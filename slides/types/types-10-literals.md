@@ -1,3 +1,4 @@
+## Literal Types
 In addition to the general types string and number, we can refer to specific strings and numbers in type positions.
 
 One way to think about this is to consider how JavaScript comes with different ways to declare a variable. Both var and let allow for changing what is held inside the variable, and const does not. This is reflected in how TypeScript creates types for literals.

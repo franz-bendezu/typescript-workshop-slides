@@ -1,3 +1,5 @@
+## Return Type Annotations
+
 When a parameter has a type annotation, arguments to that function will be checked:
 
 Even if you don’t have type annotations on your parameters, TypeScript will still check that you passed the right number of arguments.

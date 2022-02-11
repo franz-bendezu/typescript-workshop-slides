@@ -1,3 +1,5 @@
+## Optionals
+
 JavaScript has two primitive values used to signal absent or uninitialized value: null and undefined.
 
 TypeScript has two corresponding types by the same names. How these types behave depends on whether you have the strictNullChecks option on.
