@@ -168,3 +168,71 @@ src: ./slides/basics/strictness-2.md
 ---
 src: ./slides/basics/strictness-3.md
 ---
+
+---
+src: ./slides/types/types-01-intro.md
+---
+
+---
+src: ./slides/types/types-02-primitives.md
+---
+
+---
+src: ./slides/types/types-03-arrays.md
+---
+
+---
+src: ./slides/types/types-04-any.md
+---
+
+---
+src: ./slides/types/types-05-anotations.md
+---
+
+---
+src: ./slides/types/types-05-anotations2.md
+---
+
+---
+src: ./slides/types/types-05-anotations3.md
+---
+
+---
+src: ./slides/types/types-06-objects.md
+---
+
+---
+src: ./slides/types/types-06-objects2.md
+---
+
+---
+src: ./slides/types/types-07-unions.md
+---
+
+---
+src: ./slides/types/types-07-unions2.md
+---
+
+---
+src: ./slides/types/types-08-aliases.md
+---
+
+---
+src: ./slides/types/types-09-assertions.md
+---
+
+---
+src: ./slides/types/types-10-literals.md
+---
+
+---
+src: ./slides/types/types-10-literals2.md
+---
+
+---
+src: ./slides/types/types-11-optionals.md
+---
+
+---
+src: ./slides/types/types-11-optionals2.md
+---
