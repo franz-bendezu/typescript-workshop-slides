@@ -1,4 +1,1 @@
-import * as codeCSS from "./code.css";
-
-export const conditionalExport =
-  import.meta.env.DEV  ? codeCSS : undefined;
+const modules = import.meta.env.DEV&&import.meta.globEager("./code.css")
