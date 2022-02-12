@@ -1,6 +1,7 @@
+
 ## Los Primitivos: `string`, `number`, and `boolean`
 
-JavaScript tiene tres [ primitivos ] muy comúnmente utilizadas (https://developer.mozilla.org/en-US/docs/Glossary/Primitive): `string` , `number` y `boolean` .
+JavaScript tiene tres [ primitivos ] muy comúnmente utilizadas (https://developer.mozilla.org/en-US/docs/Glossary/Primitive): `String` , `Number` y `Boolean` .
 Cada uno tiene un tipo correspondiente en TypeScript.
 Como era de esperar, estos son los mismos nombres que vería si usara el operador `typeof` de JavaScript en un valor de esos tipos:
 
@@ -14,3 +15,4 @@ const greeting: string = "Hola, mundo";
 const lifeAnswer: number = 42;
 const doesSheLikesMe: boolean = false;
 ```
+

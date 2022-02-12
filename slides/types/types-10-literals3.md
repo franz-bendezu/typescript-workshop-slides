@@ -15,7 +15,7 @@ Por supuesto, puede combinarlos con tipos no literales:
 
 ```ts twoslash
 // @errors: 2345
-interface Options {
+type Options =  {
   width: number;
 }
 function configure(x: Options | "auto") {

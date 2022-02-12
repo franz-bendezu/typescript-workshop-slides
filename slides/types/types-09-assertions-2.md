@@ -9,7 +9,7 @@ const x = "hello" as number;
 ```
 
 A veces, esta regla puede ser demasiado conservadora y no permitirá coacciones más complejas que podrían ser válidas.
-Si esto sucede, puede usar dos aserciones, primero para `cualquiera` (o `desconocido`, que presentaremos más adelante), luego para el tipo deseado:
+Si esto sucede, puede usar dos aserciones, primero para `any` (o `unknow`, que presentaremos más adelante), luego para el tipo deseado:
 ```ts twoslash
 declare const expr: any;
 type T = { a: 1; b: 2; c: 3 };
