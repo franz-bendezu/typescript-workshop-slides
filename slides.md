@@ -6,6 +6,7 @@ layout: center
 class: text-center
 canvasWidth: 1080
 ---
+
 <div class="pt-12">
   <span class="px-2 py-1 rounded text-6xl" hover="bg-white bg-opacity-10">
    <logos-typescript-icon   class="inline"/>  <span class="">Taller de Typescript </span>
@@ -16,9 +17,10 @@ canvasWidth: 1080
    Gracias a
   </div>
     <div class="px-2 py-1 rounded cursor-pointer font-bold" hover="bg-white bg-opacity-10">
-   Franz Bendezu y Marco Vela
+   Franz Bendezu y Misael Abanto
   </div>
 </div>
+
 
 ---
 src: ./slides/intro/context.md
