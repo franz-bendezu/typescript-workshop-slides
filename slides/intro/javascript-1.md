@@ -1,3 +1,4 @@
+
 # ¿Qué es JavaScript?
 - JavaScript (ECMAScript) empezó como un simple lenguaje de secuencias de comandos para navegadores.
 - Es un lenguaje que fue diseñado para usos rápidos
@@ -19,4 +20,3 @@ h1 {
   color: #000000;
 }
 </style>
-

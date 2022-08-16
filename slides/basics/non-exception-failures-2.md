@@ -1,3 +1,4 @@
+
 ## Fallos no excepcionales
 
 En última instancia, un sistema de tipo estático tiene que hacer la llamada sobre qué código debe marcarse como un error en su sistema, incluso si es JavaScript "válido" que no generará un error de inmediato.
